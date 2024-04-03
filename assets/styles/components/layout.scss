@@ -298,35 +298,43 @@ article,
   text-align: center;
   line-height: normal;
 }
-.single-vehicle .pkw svg {
+.single-vehicle .pkw svg,
+.single-vehicle .kfz-steuer-rechner svg {
   width: 38px;
   height: 22px;
 }
-.single-vehicle .motorrad svg {
+.single-vehicle .motorrad svg,
+.single-vehicle .motorrad-steuer-rechner svg {
   width: 33px;
   height: 21px;
 }
-.single-vehicle .wohnmobil svg {
+.single-vehicle .wohnmobil svg,
+.single-vehicle .wohnmobil-steuer-rechner svg {
   width: 41px;
   height: 25px;
 }
-.single-vehicle .anhaenger svg {
+.single-vehicle .anhaenger svg,
+.single-vehicle .anhaenger-steuer-rechner svg {
   width: 41px;
   height: 29px;
 }
-.single-vehicle .lkw svg {
+.single-vehicle .lkw svg,
+.single-vehicle .lkw-steuer-rechner svg {
   width: 43px;
   height: 25px;
 }
-.single-vehicle .wohnwagen svg {
+.single-vehicle .wohnwagen svg,
+.single-vehicle .wohnwagen-steuer-rechner svg {
   width: 35px;
   height: 23px;
 }
-.single-vehicle .efz svg {
+.single-vehicle .efz svg,
+.single-vehicle .elektro-fahrzeug-steuer-rechner svg {
   width: 39px;
   height: 22px;
 }
-.single-vehicle .oldtimer svg {
+.single-vehicle .oldtimer svg,
+.single-vehicle .oldtimer-steuer-rechner svg {
   width: 46px;
   height: 21px;
 }
