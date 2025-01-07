@@ -12,6 +12,7 @@
     <link rel="alternate" hreflang="es" href="https://kfz-steuer.co/es/" />
     <link rel="alternate" hreflang="ru" href="https://kfz-steuer.co/ru/" />
     <link rel="alternate" hreflang="tr" href="https://kfz-steuer.co/tr/" />
+    <link rel="alternate" hreflang="pl" href="https://kfz-steuer.co/pl/" />
     <title>kfz-steuer.co</title>
     <link rel="canonical" href="https://kfz-steuer.co/">
 <!--    <meta name="robots" content="follow, noindex" />-->
@@ -22,14 +23,16 @@
         const lang = navigator.language || navigator.userLanguage;
         if (lang.indexOf('de') == 0) {
             window.location = '/de/';
-        } else if (lang.indexOf('es') == 1) {
-            window.location = '/es/';
-        } else if (lang.indexOf('ru') == 2) {
-            window.location = '/ru/';
-        } else if (lang.indexOf('tr') == 3) {
-            window.location = '/tr/';
-        } else {
+        } else if (lang.indexOf('en') == 1) {
             window.location = '/en/';
+        } else if (lang.indexOf('sp') == 2) {
+            window.location = '/sp/';
+        } else if (lang.indexOf('ru') == 3) {
+            window.location = '/ru/';
+        } else if (lang.indexOf('tr') == 4) {
+            window.location = '/tr/';
+        } else if (lang.indexOf('pl') == 5) {
+            window.location = '/pl/';
         }
     </script>
 
