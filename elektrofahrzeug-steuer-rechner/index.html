@@ -428,12 +428,19 @@
 
                 <div class="calculator-container pure-form pure-form-stacked">
     <div class="inner-calc">
-        <div class="pure-g">
+        <div class="pure-g row">
             <div class="qm-md-6-12 qm-sm-12-12 p-r-10">
+                <label class="tooltip">Erstzulassung <sub>*</sub><span class="tooltiptext"><strong>Erstzulassung (EZ)</strong><br>Das Datum der Erstzulassung steht in der Zulassungsbescheinigung Teil I, Feld B. Elektrofahrzeuge mit Erstzulassung vom 18.05.2011 bis 31.12.2030 sind zehn Jahre ab diesem Tag von der Kfz-Steuer befreit, längstens bis zum 31.12.2035 (§ 3d KraftStG). Bei einem nachträglich umgerüsteten Fahrzeug geben Sie stattdessen den Tag ein, an dem die Zulassungsbehörde die Umrüstung festgestellt hat.</span></label>
+                <input class="qm-sm-12-12 jsCalcEvRegistrationInput" type="date" name="initial-registration">
+            </div>
+            <div class="qm-md-6-12 qm-sm-12-12 p-l-10">
                 <label class="tooltip">Zulässige Gesamtmasse in KG <sub>*</sub><span class="tooltiptext">Das verkehrsrechtlich zulässige Gesamtgewicht steht in der Zulassungsbescheinigung Teil I, Feld F.2. Beachten Sie, dass es von der technisch zulässigen Gesamtmasse abweichen kann.</span></label>
                 <input class="qm-sm-12-12 numeric-input jsCalcEvTotalInput" type="number" name="total-mass">
             </div>
-            <div class="qm-md-6-12 qm-sm-12-12 p-l-10">
+        </div>
+
+        <div class="pure-g row">
+            <div class="qm-md-6-12 qm-sm-12-12 p-r-10">
                 <div class="pure-g">
                     <div class="qm-md-12-12 qm-sm-12-12">
                         <label class="tooltip">Anmeldezeitraum<span class="tooltiptext"><strong>Saisonkennzeichen</strong><br>Fahrzeuge können für einige Monate angemeldet werden. Der Zeitraum ist von 2 bis 11 Monaten frei wählbar. Eine solche Saisonzulassung wird durch zwei Ziffern angegeben, die rechts im Nummernschild eingeprägt sind. In diesem Zeitraum ist das Fahrzeug im Straßenverkehr zugelassen.</span></label>
@@ -483,8 +490,14 @@
         </div>
     </div>
 
+    
     <div class="calculator-message jsCalcEvResult">
         <h2>Die Kfz-Steuer für dieses Fahrzeug beträgt:</h2><span class="result_number jsCalcEvResultValue">0,00 €</span><h2></h2>
+        <p class="jsCalcEvNote" hidden
+           data-missing="Bitte geben Sie die Erstzulassung ein. Erst damit kann der Rechner prüfen, ob Ihr Fahrzeug nach § 3d KraftStG noch steuerbefreit ist."
+           data-exempt="Steuerbefreit bis zum <strong>{date}</strong> (§ 3d KraftStG). Nach Ablauf der Befreiung beträgt die Kfz-Steuer <strong>{tax}</strong>."
+           data-expired="Die Steuerbefreiung nach § 3d KraftStG ist am {date} abgelaufen. Seitdem gilt die halbierte Gewichtssteuer."
+           data-no-exemption="Für Elektrofahrzeuge mit Erstzulassung ab dem 01.01.2031 gibt es keine Steuerbefreiung mehr. Es gilt von Anfang an die halbierte Gewichtssteuer (§ 9 Abs. 2 KraftStG)."></p>
     </div>
 </div>
 
@@ -615,7 +628,7 @@
 
 
 
-<p>Elektrofahrzeuge haben zahlreiche Vorteile und erfreuen sich immer größerer Beliebtheit. Einer der Vorteile ist der sehr günstige Steuersatz, bzw. die Steuerbefreiung für 10 Jahre für erstmalig zugelassene Elektrofahrzeuge. Wie hoch die Kfz-Steuer für Ihr Elektroauto ist, erfahren Sie schnell und einfach mit dem Kfz-Steuer Rechner für Elektrofahrzeuge. Im Gegensatz zu konventionellen Autos ist hier lediglich das zulässige Gesamtgewicht ausschlaggebend.<br><br>Wissen Sie bereits, ob und wie viel Kfz-Steuer für Ihr Elektroauto anfällt? Mit dem kostenlosen Kfz-Steuer Rechner für Elektrofahrzeuge ermitteln Sie die Höhe der Kfz-Steuer individuell für Ihr Fahrzeug - schnell und einfach. Jetzt live und unverbindlich berechnen.</p>
+<p>Der Rechner braucht zwei Angaben aus der Zulassungsbescheinigung Teil I: die Erstzulassung aus Feld <strong>B</strong> und das zulässige Gesamtgewicht aus Feld <strong>F.2</strong>. Aus der Erstzulassung ergibt sich, ob und bis wann die Steuerbefreiung nach § 3d KraftStG gilt; danach fällt die halbierte Gewichtssteuer an, die der Rechner ebenfalls nennt.</p>
 
 
 <p>Die Mobilität der Zukunft ist elektrisch – der Eindruck entsteht jedenfalls, wenn man sich das Konzept für die Besteuerung von elektrischen Autos ansieht. Für Elektrofahrzeuge gelten Steuererleichterungen, sie sind zum Teil von der Kfz-Steuer befreit.</p>
@@ -741,9 +754,9 @@
 
 <div class="c-FAQ-item" id="elektrofahrzeuge-definition">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1752201" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput7002581" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput1752201">
+            <label class="c-FAQ-label" for="faqInput7002581">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -759,9 +772,9 @@
         </div>
 <div class="c-FAQ-item" id="kfz-steuerbefreiung-elektrofahrzeug">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1492212" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput4112592" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput1492212">
+            <label class="c-FAQ-label" for="faqInput4112592">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -777,9 +790,9 @@
         </div>
 <div class="c-FAQ-item" id="kfz-steuer-hybridfahrzeuge">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput7372213" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput72603" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput7372213">
+            <label class="c-FAQ-label" for="faqInput72603">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -796,9 +809,9 @@ Dabei spielt das Datum der Erstzulassung eine Rolle. Daneben sind die Größe de
         </div>
 <div class="c-FAQ-item" id="grund-kfz-steuerbeguenstigung">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput5892224" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput9102604" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput5892224">
+            <label class="c-FAQ-label" for="faqInput9102604">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -816,9 +829,9 @@ Die Reichweite dieser Fahrzeuge ist allerdings noch begrenzt, deswegen kommen si
         </div>
 <div class="c-FAQ-item" id="elektrofahrzeug-kfz-steuer-rechtliche-grundlage">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput3482235" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput6462645" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput3482235">
+            <label class="c-FAQ-label" for="faqInput6462645">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -837,9 +850,9 @@ Die Reichweite dieser Fahrzeuge ist allerdings noch begrenzt, deswegen kommen si
         </div>
 <div class="c-FAQ-item" id="elektrofahrzeug-kfz-steuer-berechnung">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput4202246" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput8322656" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput4202246">
+            <label class="c-FAQ-label" for="faqInput8322656">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -856,9 +869,9 @@ Bei Nutzfahrzeugen, Elektrofahrzeugen und Wohnmobilen kommt bei der Berechnung d
         </div>
 <div class="c-FAQ-item" id="elektrofahrzeug-kfz-steuer-vorteile">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput2282257" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput6992667" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput2282257">
+            <label class="c-FAQ-label" for="faqInput6992667">
 
                 <div class="c-FAQ-icon"></div>
 

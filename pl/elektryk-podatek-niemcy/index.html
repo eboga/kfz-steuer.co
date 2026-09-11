@@ -429,12 +429,19 @@
 
                 <div class="calculator-container pure-form pure-form-stacked">
     <div class="inner-calc">
-        <div class="pure-g">
+        <div class="pure-g row">
             <div class="qm-md-6-12 qm-sm-12-12 p-r-10">
+                <label class="tooltip">Data pierwszej rejestracji <sub>*</sub><span class="tooltiptext"><strong>Data pierwszej rejestracji (Erstzulassung - EZ)</strong><br>Znajdziesz ją w dowodzie rejestracyjnym (Zulassungsbescheinigung Teil I), pole B. Pojazdy elektryczne zarejestrowane po raz pierwszy między 18.05.2011 a 31.12.2030 są zwolnione z podatku przez dziesięć lat od tego dnia, najdłużej jednak do 31.12.2035 (§ 3d KraftStG). Jeśli pojazd został później przebudowany na napęd elektryczny, wpisz zamiast tego dzień, w którym urząd rejestracyjny potwierdził przebudowę.</span></label>
+                <input class="qm-sm-12-12 jsCalcEvRegistrationInput" type="date" name="initial-registration">
+            </div>
+            <div class="qm-md-6-12 qm-sm-12-12 p-l-10">
                 <label class="tooltip">Dopuszczalna masa całkowita <sub>*</sub><span class="tooltiptext">Wprowadź dopuszczalną masę własną pojazdu.</span></label>
                 <input class="qm-sm-12-12 numeric-input jsCalcEvTotalInput" type="number" name="total-mass">
             </div>
-            <div class="qm-md-6-12 qm-sm-12-12 p-l-10">
+        </div>
+
+        <div class="pure-g row">
+            <div class="qm-md-6-12 qm-sm-12-12 p-r-10">
                 <div class="pure-g">
                     <div class="qm-md-12-12 qm-sm-12-12">
                         <label class="tooltip">Okres rejestracji<span class="tooltiptext"><strong>Rejestracja sezonowa</strong><br>Pojazd można zarejestrować na okres krótszy niż 12 miesięcy. Można wybrać rejestrację na okres od 2 do 11 miesięcy. W tym okresie możesz korzystać z samochodu na drogach publicznych.</span></label>
@@ -484,8 +491,14 @@
         </div>
     </div>
 
+    
     <div class="calculator-message jsCalcEvResult">
         <h2>Podatek roczny za ten pojazd wyniesie: </h2><span class="result_number jsCalcEvResultValue">0,00 €</span><h2> </h2>
+        <p class="jsCalcEvNote" hidden
+           data-missing="Wprowadź datę pierwszej rejestracji. Kalkulator potrzebuje jej, aby sprawdzić, czy pojazd jest nadal zwolniony z podatku na podstawie § 3d KraftStG."
+           data-exempt="Zwolnienie z podatku do <strong>{date}</strong> (§ 3d KraftStG). Po zakończeniu zwolnienia podatek wyniesie <strong>{tax}</strong>."
+           data-expired="Zwolnienie z podatku na podstawie § 3d KraftStG wygasło {date}. Od tego czasu obowiązuje połowa podatku od masy pojazdu."
+           data-no-exemption="Pojazdy elektryczne zarejestrowane po raz pierwszy od 01.01.2031 nie otrzymują już zwolnienia z podatku. Od początku obowiązuje połowa podatku od masy pojazdu (§ 9 ust. 2 KraftStG)."></p>
     </div>
 </div>
 

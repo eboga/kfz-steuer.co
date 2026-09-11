@@ -429,12 +429,19 @@
 
                 <div class="calculator-container pure-form pure-form-stacked">
     <div class="inner-calc">
-        <div class="pure-g">
+        <div class="pure-g row">
             <div class="qm-md-6-12 qm-sm-12-12 p-r-10">
+                <label class="tooltip">İlk tescil tarihi <sub>*</sub><span class="tooltiptext"><strong>İlk tescil tarihi (Erstzulassung - EZ)</strong><br>Tescil belgesinde (Zulassungsbescheinigung Teil I) B alanında bulunur. 18.05.2011 ile 31.12.2030 tarihleri arasında ilk kez tescil edilen elektrikli araçlar, bu tarihten itibaren on yıl boyunca, en geç 31.12.2035 tarihine kadar araç vergisinden muaftır (§ 3d KraftStG). Sonradan elektrikli tahrike dönüştürülen bir araç için bunun yerine tescil makamının dönüşümü onayladığı günü girin.</span></label>
+                <input class="qm-sm-12-12 jsCalcEvRegistrationInput" type="date" name="initial-registration">
+            </div>
+            <div class="qm-md-6-12 qm-sm-12-12 p-l-10">
                 <label class="tooltip">KG cinsinden izin verilen toplam kütle <sub>*</sub><span class="tooltiptext">Brüt araç ağırlığı, tescil belgesi Bölüm I, alan F.2'de belirtilmiştir. Lütfen bunun teknik olarak izin verilen brüt araç ağırlığından farklı olabileceğini unutmayın.</span></label>
                 <input class="qm-sm-12-12 numeric-input jsCalcEvTotalInput" type="number" name="total-mass">
             </div>
-            <div class="qm-md-6-12 qm-sm-12-12 p-l-10">
+        </div>
+
+        <div class="pure-g row">
+            <div class="qm-md-6-12 qm-sm-12-12 p-r-10">
                 <div class="pure-g">
                     <div class="qm-md-12-12 qm-sm-12-12">
                         <label class="tooltip">Kayıt süresi<span class="tooltiptext"><strong>Sezonluk plaka</strong><br>Araçlar birkaç aylığına kaydedilebilir. Süre 2 ila 11 ay arasında serbestçe seçilebilir. Böyle bir sezonluk kayıt, plakanın sağ tarafında kabartmalı iki rakamla gösterilir.</span></label>
@@ -484,8 +491,14 @@
         </div>
     </div>
 
+    
     <div class="calculator-message jsCalcEvResult">
         <h2>Bu araç için araç vergisi:</h2><span class="result_number jsCalcEvResultValue">0,00 €</span><h2></h2>
+        <p class="jsCalcEvNote" hidden
+           data-missing="Lütfen ilk tescil tarihini girin. Hesaplayıcı, aracınızın § 3d KraftStG uyarınca hâlâ vergiden muaf olup olmadığını ancak bu bilgiyle kontrol edebilir."
+           data-exempt="<strong>{date}</strong> tarihine kadar vergiden muaf (§ 3d KraftStG). Muafiyet sona erdikten sonra araç vergisi <strong>{tax}</strong> olacaktır."
+           data-expired="§ 3d KraftStG kapsamındaki vergi muafiyeti {date} tarihinde sona erdi. O tarihten itibaren ağırlığa dayalı verginin yarısı uygulanır."
+           data-no-exemption="01.01.2031 tarihinden itibaren ilk kez tescil edilen elektrikli araçlar için artık vergi muafiyeti yoktur. Başından itibaren ağırlığa dayalı verginin yarısı uygulanır (§ 9 fıkra 2 KraftStG)."></p>
     </div>
 </div>
 
