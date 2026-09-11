@@ -415,7 +415,7 @@
     <div class="inner-calc">
         <div class="pure-g row">
             <div class="qm-md-6-12 qm-sm-12-12 p-r-10">
-                <label class="tooltip">Clase de emisiones <sub>*</sub><span class="tooltiptext"><strong>Clase de emisiones y de ruido</strong><br>La combinación S y G que figura en el campo 14.1 del permiso de circulación. Solo determina el impuesto en los vehículos de más de 3.500 kg.</span></label>
+                <label class="tooltip">Clase de emisiones <sub>*</sub><span class="tooltiptext"><strong>Clase de emisiones y de ruido</strong><br>La combinación S y G que figura en el campo 14.1 del permiso de circulación. Solo determina el impuesto en los vehículos de más de <span class='nobreak'>3.500 kg</span>.</span></label>
                 <select class="form-control qm-sm-12-12 jsCalcTruckEmissionSelect" name="emmision-class">
                     <option value="">Elija una opción</option>
                     <option value="a1">S2 o mejor</option>
@@ -526,12 +526,12 @@
 
 
 
-<p>Un camión tributa por su masa máxima autorizada. Hasta 3.500 kg solo cuenta el peso; a partir de ahí también la clase de emisiones y de ruido, y el importe tiene un tope anual.<br><br></p>
+<p>Un camión tributa por su masa máxima autorizada. Hasta <span class='nobreak'>3.500 kg</span> solo cuenta el peso; a partir de ahí también la clase de emisiones y de ruido, y el importe tiene un tope anual.<br><br></p>
 
 <p>En Alemania, un vehículo destinado al transporte de mercancías tributa por su <strong>masa máxima
 autorizada</strong>, no por la cilindrada ni por el CO2. Quien paga es el titular, y quien cobra es la
 aduana principal (Hauptzollamt) de su domicilio. La frontera que lo decide todo está en los
-<strong>3.500 kg</strong>: por debajo solo cuenta el peso, por encima entra también la clase de emisiones y
+<strong><span class="nobreak">3.500 kg</span></strong>: por debajo solo cuenta el peso, por encima entra también la clase de emisiones y
 de ruido, y aparece un importe máximo anual.</p>
 
 <h2 id="los-datos-que-hacen-falta">Los datos que hacen falta</h2>
@@ -541,32 +541,32 @@ de ruido, y aparece un importe máximo anual.</p>
 <ul>
   <li><strong>Masa máxima autorizada en kg</strong>, campo F.2. Es el peso para el que el vehículo está
 homologado, no lo que marca la báscula ni la masa en vacío.</li>
-  <li><strong>Clase de emisiones y de ruido</strong>, campo 14.1, y solo si el vehículo pasa de 3.500 kg. La
+  <li><strong>Clase de emisiones y de ruido</strong>, campo 14.1, y solo si el vehículo pasa de <span class="nobreak">3.500 kg</span>. La
 clasifica la oficina de matriculación en cuatro grupos: S 2 o mejor, S 1, G 1 y el resto.</li>
 </ul>
 
-<h2 id="furgonetas-y-camiones-ligeros-hasta-3500-kg">Furgonetas y camiones ligeros hasta 3.500 kg</h2>
+<h2 id="furgonetas-y-camiones-ligeros-hasta-3500-kg">Furgonetas y camiones ligeros hasta <span class="nobreak">3.500 kg</span></h2>
 
-<p>Aquí el cálculo es puramente de peso, por tramos de 200 kg empezados, sin tope y sin que la
+<p>Aquí el cálculo es puramente de peso, por tramos de <span class="nobreak">200 kg</span> empezados, sin tope y sin que la
 clase de emisiones cambie nada (§ 9 apdo. 1 núm. 3 KraftStG):</p>
 
 <table class="pure-table">
 <thead>
 <tr>
 <th width="50%">Masa máxima autorizada</th>
-<th width="50%">Por cada 200 kg empezados</th>
+<th width="50%">Por cada <span class="nobreak">200 kg</span> empezados</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>hasta 2.000 kg</td><td>11,25 €</td></tr>
-<tr><td>más de 2.000 hasta 3.000 kg</td><td>12,02 €</td></tr>
-<tr><td>más de 3.000 hasta 3.500 kg</td><td>12,78 €</td></tr>
+<tr><td>hasta <span class="nobreak">2.000 kg</span></td><td><span class="nobreak">11,25 €</span></td></tr>
+<tr><td>más de 2.000 hasta <span class="nobreak">3.000 kg</span></td><td><span class="nobreak">12,02 €</span></td></tr>
+<tr><td>más de 3.000 hasta <span class="nobreak">3.500 kg</span></td><td><span class="nobreak">12,78 €</span></td></tr>
 </tbody>
 </table>
 
-<p>Los tramos se acumulan, no se sustituyen. Una furgoneta de 2.600 kg paga los diez primeros
-tramos a 11,25 €, que son 112,50 €, y los tres siguientes a 12,02 €, que son 36,06 €: en total
-148,56 € al año y <strong>148 € a pagar</strong>. Con este método salen las cifras habituales del segmento:</p>
+<p>Los tramos se acumulan, no se sustituyen. Una furgoneta de <span class="nobreak">2.600 kg</span> paga los diez primeros
+tramos a <span class="nobreak">11,25 €</span>, que son <span class="nobreak">112,50 €</span>, y los tres siguientes a <span class="nobreak">12,02 €</span>, que son <span class="nobreak">36,06 €</span>: en total
+<span class="nobreak">148,56 €</span> al año y <strong><span class="nobreak">148 €</span> a pagar</strong>. Con este método salen las cifras habituales del segmento:</p>
 
 <table class="pure-table">
 <thead>
@@ -577,25 +577,25 @@ tramos a 11,25 €, que son 112,50 €, y los tres siguientes a 12,02 €, que s
 </tr>
 </thead>
 <tbody>
-<tr><td>2.000 kg</td><td>112,50 €</td><td class="blue"><strong>112 €</strong></td></tr>
-<tr><td>2.600 kg</td><td>148,56 €</td><td class="blue"><strong>148 €</strong></td></tr>
-<tr><td>2.800 kg</td><td>160,58 €</td><td class="blue"><strong>160 €</strong></td></tr>
-<tr><td>3.000 kg</td><td>172,60 €</td><td class="blue"><strong>172 €</strong></td></tr>
-<tr><td>3.500 kg</td><td>210,94 €</td><td class="blue"><strong>210 €</strong></td></tr>
+<tr><td><span class="nobreak">2.000 kg</span></td><td><span class="nobreak">112,50 €</span></td><td><span class="blue nobreak"><strong>112 €</strong></span></td></tr>
+<tr><td><span class="nobreak">2.600 kg</span></td><td><span class="nobreak">148,56 €</span></td><td><span class="blue nobreak"><strong>148 €</strong></span></td></tr>
+<tr><td><span class="nobreak">2.800 kg</span></td><td><span class="nobreak">160,58 €</span></td><td><span class="blue nobreak"><strong>160 €</strong></span></td></tr>
+<tr><td><span class="nobreak">3.000 kg</span></td><td><span class="nobreak">172,60 €</span></td><td><span class="blue nobreak"><strong>172 €</strong></span></td></tr>
+<tr><td><span class="nobreak">3.500 kg</span></td><td><span class="nobreak">210,94 €</span></td><td><span class="blue nobreak"><strong>210 €</strong></span></td></tr>
 </tbody>
 </table>
 
-<p>La calculadora de esta página reproduce la escala de los vehículos de <strong>más de 3.500 kg</strong>. Los
+<p>La calculadora de esta página reproduce la escala de los vehículos de <strong>más de <span class="nobreak">3.500 kg</span></strong>. Los
 vehículos industriales más ligeros siguen la norma propia que se acaba de explicar, sin clases de
 emisiones, y sus importes son los de la tabla anterior.</p>
 
-<p>Pasar de los 3.500 kg no encarece necesariamente la factura: un vehículo de 3.600 kg con clase
-S 2 paga <strong>120 €</strong>, menos que una furgoneta de 3.500 kg. El salto de escala compensa el peso
+<p>Pasar de los <span class="nobreak">3.500 kg</span> no encarece necesariamente la factura: un vehículo de <span class="nobreak">3.600 kg</span> con clase
+S 2 paga <span class="nobreak">120 €</span>, menos que una furgoneta de <span class="nobreak">3.500 kg</span>. El salto de escala compensa el peso
 adicional.</p>
 
-<h2 id="por-encima-de-3500-kg">Por encima de 3.500 kg</h2>
+<h2 id="por-encima-de-3500-kg">Por encima de <span class="nobreak">3.500 kg</span></h2>
 
-<p>A partir de ese peso el impuesto sigue contando por tramos de 200 kg, pero con escalas propias
+<p>A partir de ese peso el impuesto sigue contando por tramos de <span class="nobreak">200 kg</span>, pero con escalas propias
 según la clase y con un importe máximo anual que se alcanza antes de lo que parece
 (§ 9 apdo. 1 núm. 4 KraftStG):</p>
 
@@ -608,17 +608,17 @@ según la clase y con un importe máximo anual que se alcanza antes de lo que pa
 </tr>
 </thead>
 <tbody>
-<tr><td>S 2 o mejor</td><td>6,42 €</td><td class="blue"><strong>556 €</strong></td></tr>
-<tr><td>S 1</td><td>6,42 €</td><td class="blue"><strong>914 €</strong></td></tr>
-<tr><td>G 1</td><td>9,64 €</td><td class="blue"><strong>1.425 €</strong></td></tr>
-<tr><td>Las demás</td><td>11,25 €</td><td class="blue"><strong>1.681 €</strong></td></tr>
+<tr><td>S 2 o mejor</td><td><span class="nobreak">6,42 €</span></td><td><span class="nobreak">556 €</span></td></tr>
+<tr><td>S 1</td><td><span class="nobreak">6,42 €</span></td><td><span class="nobreak">914 €</span></td></tr>
+<tr><td>G 1</td><td><span class="nobreak">9,64 €</span></td><td><span class="nobreak">1.425 €</span></td></tr>
+<tr><td>Las demás</td><td><span class="nobreak">11,25 €</span></td><td><span class="nobreak">1.681 €</span></td></tr>
 </tbody>
 </table>
 
-<p>Un camión de 7.500 kg con clase S 2 paga 285 € al año. Uno de 18.000 kg de la misma clase ya
-está en el tope, 556 €, y un tractocamión de 40 toneladas con clase S 2 paga exactamente lo
+<p>Un camión de <span class="nobreak">7.500 kg</span> con clase S 2 paga <span class="nobreak">285 €</span> al año. Uno de <span class="nobreak">18.000 kg</span> de la misma clase ya
+está en el tope, <span class="nobreak">556 €</span>, y un tractocamión de 40 toneladas con clase S 2 paga exactamente lo
 mismo. Solo en las clases antiguas el peso sigue notándose: 40 toneladas sin clasificar llegan
-al tope de 1.681 €.</p>
+al tope de <span class="nobreak">1.681 €</span>.</p>
 
 <p>De ahí una consecuencia práctica: en la flota pesada, mejorar la clase de emisiones vale mucho
 más dinero que ajustar los kilos.</p>
@@ -634,7 +634,7 @@ antiguas y hoy no son requisitos legales. Lo que vale es lo que dice el papel.</
 <h2 id="remolques-temporada-y-exenciones">Remolques, temporada y exenciones</h2>
 
 <p>Quien arrastra remolques puede pagar el <strong>recargo por remolque (Anhängerzuschlag)</strong>: una
-cantidad fija de 373,24 € al año que se añade al impuesto del vehículo tractor. A cambio, los
+cantidad fija de <span class="nobreak">373,24 €</span> al año que se añade al impuesto del vehículo tractor. A cambio, los
 remolques que circulen exclusivamente detrás de vehículos con ese recargo no pagan impuesto
 propio y reciben matrícula verde. Hay que solicitarlo, y quedan fuera las caravanas y los
 remolques de motos y turismos.</p>
@@ -647,7 +647,7 @@ impuesto anual por cada día del periodo. Es habitual en vehículos de obra o de
 civil, los de limpieza viaria y obra pública reconocibles desde fuera, y los tractores agrícolas
 que no sean tractocamiones mientras se usen exclusivamente en el campo. El impuesto se paga por
 doce meses por adelantado desde el día de la matriculación y solo puede fraccionarse por
-semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
+semestres a partir de <span class="nobreak">500 €</span> anuales, con un recargo del <span class="nobreak">3 %</span>.</p>
 
 <h2 id="preguntas-frecuentes-sobre-el-impuesto-de-camiones">Preguntas frecuentes sobre el impuesto de camiones</h2>
 
@@ -655,9 +655,9 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
 
 <div class="c-FAQ-item" id="cuando-es-camion-y-no-turismo">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput2844831" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput9570411" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput2844831">
+            <label class="c-FAQ-label" for="faqInput9570411">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -671,9 +671,9 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
         </div>
 <div class="c-FAQ-item" id="camion-hasta-3500-kg">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput5574832" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput2200422" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput5574832">
+            <label class="c-FAQ-label" for="faqInput2200422">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -681,15 +681,15 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>Solo cuenta el peso: 11,25 € por cada 200 kg empezados hasta 2.000 kg, 12,02 € entre 2.000 y 3.000 kg y 12,78 € entre 3.000 y 3.500 kg. Un vehículo de 2.600 kg paga diez tramos a 11,25 € más tres a 12,02 €, es decir 148,56 € al año y 148 € a pagar. La clase de emisiones no influye por debajo de 3.500 kg. Atención: la calculadora de esta página aplica las tarifas de los vehículos pesados, así que por debajo de 3.500 kg hay que usar la tabla del texto.</p>
+            <div class="c-FAQ-answer"><p>Solo cuenta el peso: <span class="nobreak">11,25 €</span> por cada <span class="nobreak">200 kg</span> empezados hasta <span class="nobreak">2.000 kg</span>, <span class="nobreak">12,02 €</span> entre 2.000 y <span class="nobreak">3.000 kg</span> y <span class="nobreak">12,78 €</span> entre 3.000 y <span class="nobreak">3.500 kg</span>. Un vehículo de <span class="nobreak">2.600 kg</span> paga diez tramos a <span class="nobreak">11,25 €</span> más tres a <span class="nobreak">12,02 €</span>, es decir <span class="nobreak">148,56 €</span> al año y <span class="nobreak">148 €</span> a pagar. La clase de emisiones no influye por debajo de <span class="nobreak">3.500 kg</span>. Atención: la calculadora de esta página aplica las tarifas de los vehículos pesados, así que por debajo de <span class="nobreak">3.500 kg</span> hay que usar la tabla del texto.</p>
 </div>
 
         </div>
 <div class="c-FAQ-item" id="camion-40-toneladas">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput8264833" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput7110423" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput8264833">
+            <label class="c-FAQ-label" for="faqInput7110423">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -697,15 +697,15 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>Llega al tope en cualquier clase. Con S 2 o mejor el tope anual es de 556 €, con S 1 de 914 €, con G 1 de 1.425 € y con el resto de clases de 1.681 €. Un tractocamión moderno de 40 toneladas con clase S 2 paga por tanto 556 € al año, lo mismo que uno de 18 toneladas de la misma clase, porque ambos superan de largo el límite.</p>
+            <div class="c-FAQ-answer"><p>Llega al tope en cualquier clase. Con S 2 o mejor el tope anual es de <span class="nobreak">556 €</span>, con S 1 de <span class="nobreak">914 €</span>, con G 1 de <span class="nobreak">1.425 €</span> y con el resto de clases de <span class="nobreak">1.681 €</span>. Un tractocamión moderno de 40 toneladas con clase S 2 paga por tanto <span class="nobreak">556 €</span> al año, lo mismo que uno de 18 toneladas de la misma clase, porque ambos superan de largo el límite.</p>
 </div>
 
         </div>
 <div class="c-FAQ-item" id="camion-26-toneladas">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput864844" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput970434" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput864844">
+            <label class="c-FAQ-label" for="faqInput970434">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -713,15 +713,15 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>También alcanza el tope si su clase es S 2 o mejor: 556 € al año. Con clases peores el importe sube según la escala correspondiente y puede llegar hasta los 1.681 € de las categorías más antiguas. Por eso, en los vehículos pesados, la clase de emisiones y de ruido pesa mucho más en la factura que los kilos exactos.</p>
+            <div class="c-FAQ-answer"><p>También alcanza el tope si su clase es S 2 o mejor: <span class="nobreak">556 €</span> al año. Con clases peores el importe sube según la escala correspondiente y puede llegar hasta los <span class="nobreak">1.681 €</span> de las categorías más antiguas. Por eso, en los vehículos pesados, la clase de emisiones y de ruido pesa mucho más en la factura que los kilos exactos.</p>
 </div>
 
         </div>
 <div class="c-FAQ-item" id="clase-de-emisiones-camion">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput3264845" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput7250435" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput3264845">
+            <label class="c-FAQ-label" for="faqInput7250435">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -729,15 +729,15 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>Solo por encima de 3.500 kg. A partir de ese peso el § 9 apdo. 1 núm. 4 KraftStG separa cuatro categorías, S 2 o mejor, S 1, G 1 y el resto, cada una con su escala y su tope anual. Por debajo de 3.500 kg el impuesto depende únicamente del peso. La clase figura en el campo 14.1 del permiso de circulación.</p>
+            <div class="c-FAQ-answer"><p>Solo por encima de <span class="nobreak">3.500 kg</span>. A partir de ese peso el § 9 apdo. 1 núm. 4 KraftStG separa cuatro categorías, S 2 o mejor, S 1, G 1 y el resto, cada una con su escala y su tope anual. Por debajo de <span class="nobreak">3.500 kg</span> el impuesto depende únicamente del peso. La clase figura en el campo 14.1 del permiso de circulación.</p>
 </div>
 
         </div>
 <div class="c-FAQ-item" id="recargo-por-remolque">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput5884846" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput380446" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput5884846">
+            <label class="c-FAQ-label" for="faqInput380446">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -745,11 +745,11 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>Existe el recargo por remolque (Anhängerzuschlag): 373,24 € al año, una cantidad fija que paga el titular del vehículo tractor (§ 10 apdo. 3 KraftStG). A cambio, los remolques que circulen exclusivamente detrás de vehículos con ese recargo quedan libres de impuesto propio y reciben matrícula verde. Hay que solicitarlo, y no se aplica a caravanas ni a remolques de turismos y motos.</p>
+            <div class="c-FAQ-answer"><p>Existe el recargo por remolque (Anhängerzuschlag): <span class="nobreak">373,24 €</span> al año, una cantidad fija que paga el titular del vehículo tractor (§ 10 apdo. 3 KraftStG). A cambio, los remolques que circulen exclusivamente detrás de vehículos con ese recargo quedan libres de impuesto propio y reciben matrícula verde. Hay que solicitarlo, y no se aplica a caravanas ni a remolques de turismos y motos.</p>
 </div>
 
         </div>
-<script type="application/ld+json" hidden="">{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "¿Cuándo tributa un vehículo como camión y no como turismo?", "acceptedAnswer": { "@type": "Answer", "text": "<p>No lo elige el titular. El § 2 apdo. 2 núm. 2 KraftStG declara vinculante la clasificación que hace la oficina de matriculación, y el § 8 núm. 1 se remite a la clase de vehículo M1 para los turismos. Las reglas de andar por casa que circulan por los foros, como que la zona de carga sea mayor que el habitáculo o que haya menos de cinco plazas, proceden de sentencias antiguas y hoy no son requisitos legales.</p>\n" } }, { "@type": "Question", "name": "¿Cuánto paga una furgoneta de hasta 3.500 kg?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Solo cuenta el peso: 11,25 € por cada 200 kg empezados hasta 2.000 kg, 12,02 € entre 2.000 y 3.000 kg y 12,78 € entre 3.000 y 3.500 kg. Un vehículo de 2.600 kg paga diez tramos a 11,25 € más tres a 12,02 €, es decir 148,56 € al año y 148 € a pagar. La clase de emisiones no influye por debajo de 3.500 kg. Atención: la calculadora de esta página aplica las tarifas de los vehículos pesados, así que por debajo de 3.500 kg hay que usar la tabla del texto.</p>\n" } }, { "@type": "Question", "name": "¿Cuánto paga un camión de 40 toneladas?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Llega al tope en cualquier clase. Con S 2 o mejor el tope anual es de 556 €, con S 1 de 914 €, con G 1 de 1.425 € y con el resto de clases de 1.681 €. Un tractocamión moderno de 40 toneladas con clase S 2 paga por tanto 556 € al año, lo mismo que uno de 18 toneladas de la misma clase, porque ambos superan de largo el límite.</p>\n" } }, { "@type": "Question", "name": "¿Y un camión de 26 toneladas?", "acceptedAnswer": { "@type": "Answer", "text": "<p>También alcanza el tope si su clase es S 2 o mejor: 556 € al año. Con clases peores el importe sube según la escala correspondiente y puede llegar hasta los 1.681 € de las categorías más antiguas. Por eso, en los vehículos pesados, la clase de emisiones y de ruido pesa mucho más en la factura que los kilos exactos.</p>\n" } }, { "@type": "Question", "name": "¿La clase de emisiones cambia el impuesto?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Solo por encima de 3.500 kg. A partir de ese peso el § 9 apdo. 1 núm. 4 KraftStG separa cuatro categorías, S 2 o mejor, S 1, G 1 y el resto, cada una con su escala y su tope anual. Por debajo de 3.500 kg el impuesto depende únicamente del peso. La clase figura en el campo 14.1 del permiso de circulación.</p>\n" } }, { "@type": "Question", "name": "¿Se paga algo más por arrastrar un remolque?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Existe el recargo por remolque (Anhängerzuschlag): 373,24 € al año, una cantidad fija que paga el titular del vehículo tractor (§ 10 apdo. 3 KraftStG). A cambio, los remolques que circulen exclusivamente detrás de vehículos con ese recargo quedan libres de impuesto propio y reciben matrícula verde. Hay que solicitarlo, y no se aplica a caravanas ni a remolques de turismos y motos.</p>\n" } } ] }</script>
+<script type="application/ld+json" hidden="">{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "¿Cuándo tributa un vehículo como camión y no como turismo?", "acceptedAnswer": { "@type": "Answer", "text": "<p>No lo elige el titular. El § 2 apdo. 2 núm. 2 KraftStG declara vinculante la clasificación que hace la oficina de matriculación, y el § 8 núm. 1 se remite a la clase de vehículo M1 para los turismos. Las reglas de andar por casa que circulan por los foros, como que la zona de carga sea mayor que el habitáculo o que haya menos de cinco plazas, proceden de sentencias antiguas y hoy no son requisitos legales.</p>\n" } }, { "@type": "Question", "name": "¿Cuánto paga una furgoneta de hasta 3.500 kg?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Solo cuenta el peso: <span class=\"nobreak\">11,25 €</span> por cada <span class=\"nobreak\">200 kg</span> empezados hasta <span class=\"nobreak\">2.000 kg</span>, <span class=\"nobreak\">12,02 €</span> entre 2.000 y <span class=\"nobreak\">3.000 kg</span> y <span class=\"nobreak\">12,78 €</span> entre 3.000 y <span class=\"nobreak\">3.500 kg</span>. Un vehículo de <span class=\"nobreak\">2.600 kg</span> paga diez tramos a <span class=\"nobreak\">11,25 €</span> más tres a <span class=\"nobreak\">12,02 €</span>, es decir <span class=\"nobreak\">148,56 €</span> al año y <span class=\"nobreak\">148 €</span> a pagar. La clase de emisiones no influye por debajo de <span class=\"nobreak\">3.500 kg</span>. Atención: la calculadora de esta página aplica las tarifas de los vehículos pesados, así que por debajo de <span class=\"nobreak\">3.500 kg</span> hay que usar la tabla del texto.</p>\n" } }, { "@type": "Question", "name": "¿Cuánto paga un camión de 40 toneladas?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Llega al tope en cualquier clase. Con S 2 o mejor el tope anual es de <span class=\"nobreak\">556 €</span>, con S 1 de <span class=\"nobreak\">914 €</span>, con G 1 de <span class=\"nobreak\">1.425 €</span> y con el resto de clases de <span class=\"nobreak\">1.681 €</span>. Un tractocamión moderno de 40 toneladas con clase S 2 paga por tanto <span class=\"nobreak\">556 €</span> al año, lo mismo que uno de 18 toneladas de la misma clase, porque ambos superan de largo el límite.</p>\n" } }, { "@type": "Question", "name": "¿Y un camión de 26 toneladas?", "acceptedAnswer": { "@type": "Answer", "text": "<p>También alcanza el tope si su clase es S 2 o mejor: <span class=\"nobreak\">556 €</span> al año. Con clases peores el importe sube según la escala correspondiente y puede llegar hasta los <span class=\"nobreak\">1.681 €</span> de las categorías más antiguas. Por eso, en los vehículos pesados, la clase de emisiones y de ruido pesa mucho más en la factura que los kilos exactos.</p>\n" } }, { "@type": "Question", "name": "¿La clase de emisiones cambia el impuesto?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Solo por encima de <span class=\"nobreak\">3.500 kg</span>. A partir de ese peso el § 9 apdo. 1 núm. 4 KraftStG separa cuatro categorías, S 2 o mejor, S 1, G 1 y el resto, cada una con su escala y su tope anual. Por debajo de <span class=\"nobreak\">3.500 kg</span> el impuesto depende únicamente del peso. La clase figura en el campo 14.1 del permiso de circulación.</p>\n" } }, { "@type": "Question", "name": "¿Se paga algo más por arrastrar un remolque?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Existe el recargo por remolque (Anhängerzuschlag): <span class=\"nobreak\">373,24 €</span> al año, una cantidad fija que paga el titular del vehículo tractor (§ 10 apdo. 3 KraftStG). A cambio, los remolques que circulen exclusivamente detrás de vehículos con ese recargo quedan libres de impuesto propio y reciben matrícula verde. Hay que solicitarlo, y no se aplica a caravanas ni a remolques de turismos y motos.</p>\n" } } ] }</script>
 </div>
 
 <div class="c-Callouts">
@@ -768,7 +768,7 @@ semestres a partir de 500 € anuales, con un recargo del 3 %.</p>
 
     
         <div class="c-CalloutsCard-text c-Article">
-      <p>Actualizado el 11 de septiembre de 2026. Base legal: los §§ 8, 9 y 10 de la <a href="https://www.gesetze-im-internet.de/kraftstg/" target="_blank" rel="noreferrer noopener nofollow">Ley del impuesto sobre vehículos de motor (KraftStG)</a> en la versión de su octava ley de modificación, en vigor desde el 01.01.2026, y la guía <a href="https://www.zoll.de/DE/Fachthemen/Steuern/Verkehrsteuern/Kraftfahrzeugsteuer/Grundsaetze_Besteuerung/Steuerhoehe/steuerhoehe_node.html" target="_blank" rel="noreferrer noopener nofollow">Steuerhöhe</a> de la aduana alemana. Los importes son cálculos propios según esas tarifas; lo vinculante es la liquidación de la aduana principal.</p>
+      <p>Actualizado el 11 de septiembre de 2026. Base legal: los §§ 8, 9 y 10 de la <a href="https://www.gesetze-im-internet.de/kraftstg/" target="_blank" rel="noreferrer noopener">Ley del impuesto sobre vehículos de motor (KraftStG)</a> en la versión de su octava ley de modificación, en vigor desde el 01.01.2026, y la guía <a href="https://www.zoll.de/DE/Fachthemen/Steuern/Verkehrsteuern/Kraftfahrzeugsteuer/Grundsaetze_Besteuerung/Steuerhoehe/steuerhoehe_node.html" target="_blank" rel="noreferrer noopener">Steuerhöhe</a> de la aduana alemana. Los importes son cálculos propios según esas tarifas; lo vinculante es la liquidación de la aduana principal.</p>
     </div>
     
 

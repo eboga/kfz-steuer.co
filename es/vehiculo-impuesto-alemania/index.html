@@ -456,7 +456,7 @@
                     </select>
                 </div>
                 <div class="jsCalcCarCo2" hidden>
-                    <label class="tooltip">Emisiones de CO2 en g/km <sub>*</sub><span class="tooltiptext">El valor de CO2 está en el campo V.7 del permiso de circulación. La parte libre de impuesto la descuenta la calculadora sola:<br><br>Matriculación 01.07.2009 a 31.12.2011: 120 g/km<br><br>Matriculación 01.01.2012 a 31.12.2013: 110 g/km<br><br>Matriculación desde el 01.01.2014: 95 g/km</span></label>
+                    <label class="tooltip">Emisiones de CO2 en g/km <sub>*</sub><span class="tooltiptext">El valor de CO2 está en el campo V.7 del permiso de circulación. La parte libre de impuesto la descuenta la calculadora sola:<br><br>Matriculación 01.07.2009 a 31.12.2011: <span class='nobreak'>120 g/km</span><br><br>Matriculación 01.01.2012 a 31.12.2013: <span class='nobreak'>110 g/km</span><br><br>Matriculación desde el 01.01.2014: <span class='nobreak'>95 g/km</span></span></label>
                     <input class="qm-sm-12-12 numeric-input jsCalcCarCo2Input" type="number" name="co2-emissions">
                 </div>
             </div>
@@ -596,8 +596,8 @@ vehículo, y dos coches del mismo modelo pueden pagar cantidades distintas.</p>
 
 <h2 id="cómo-se-calcula-según-la-fecha-de-matriculación">Cómo se calcula, según la fecha de matriculación</h2>
 
-<p><strong>Desde el 01.01.2021</strong> se suman dos partes. La parte de cilindrada son 2,00 € por cada 100 cm³
-empezados en gasolina y 9,50 € en diésel. La parte de CO2 solo grava lo que pasa de 95 g/km, y
+<p><strong>Desde el 01.01.2021</strong> se suman dos partes. La parte de cilindrada son <span class="nobreak">2,00 €</span> por cada <span class="nobreak">100 cm³</span>
+empezados en gasolina y <span class="nobreak">9,50 €</span> en diésel. La parte de CO2 solo grava lo que pasa de <span class="nobreak">95 g/km</span>, y
 lo hace en seis tramos con tarifas crecientes:</p>
 
 <table class="pure-table">
@@ -609,26 +609,26 @@ lo hace en seis tramos con tarifas crecientes:</p>
 </tr>
 </thead>
 <tbody>
-<tr><td>1</td><td>más de 95 hasta 115 g/km</td><td>2,00</td></tr>
-<tr><td>2</td><td>más de 115 hasta 135 g/km</td><td>2,20</td></tr>
-<tr><td>3</td><td>más de 135 hasta 155 g/km</td><td>2,50</td></tr>
-<tr><td>4</td><td>más de 155 hasta 175 g/km</td><td>2,90</td></tr>
-<tr><td>5</td><td>más de 175 hasta 195 g/km</td><td>3,40</td></tr>
-<tr><td>6</td><td>más de 195 g/km</td><td>4,00</td></tr>
+<tr><td>1</td><td>más de 95 hasta <span class="nobreak">115 g/km</span></td><td>2,00</td></tr>
+<tr><td>2</td><td>más de 115 hasta <span class="nobreak">135 g/km</span></td><td>2,20</td></tr>
+<tr><td>3</td><td>más de 135 hasta <span class="nobreak">155 g/km</span></td><td>2,50</td></tr>
+<tr><td>4</td><td>más de 155 hasta <span class="nobreak">175 g/km</span></td><td>2,90</td></tr>
+<tr><td>5</td><td>más de 175 hasta <span class="nobreak">195 g/km</span></td><td>3,40</td></tr>
+<tr><td>6</td><td>más de <span class="nobreak">195 g/km</span></td><td>4,00</td></tr>
 </tbody>
 </table>
 
-<p>Un ejemplo con números reales. Un gasolina de 1.395 cm³ con 128 g/km matriculado en 2022 paga
-catorce tramos de cilindrada a 2,00 €, o sea 28,00 €. Del CO2, los veinte gramos que van de 95
-a 115 cuestan 2,00 € cada uno, es decir 40,00 €, y los trece que van de 115 a 128 cuestan 2,20 €
-cada uno, otros 28,60 €. En total, 96,60 € de impuesto anual y <strong>96 € a pagar</strong> tras el
+<p>Un ejemplo con números reales. Un gasolina de <span class="nobreak">1.395 cm³</span> con <span class="nobreak">128 g/km</span> matriculado en 2022 paga
+catorce tramos de cilindrada a <span class="nobreak">2,00 €</span>, o sea <span class="nobreak">28,00 €</span>. Del CO2, los veinte gramos que van de 95
+a 115 cuestan <span class="nobreak">2,00 €</span> cada uno, es decir <span class="nobreak">40,00 €</span>, y los trece que van de 115 a 128 cuestan <span class="nobreak">2,20 €</span>
+cada uno, otros <span class="nobreak">28,60 €</span>. En total, <span class="nobreak">96,60 €</span> de impuesto anual y <strong><span class="nobreak">96 €</span> a pagar</strong> tras el
 redondeo.</p>
 
 <p><strong>Entre el 01.07.2009 y el 31.12.2020</strong> la parte de cilindrada es la misma, pero el CO2 se cobra
-a 2,00 € por gramo por encima de un umbral libre que depende del año: 120 g/km hasta 2011,
-110 g/km en 2012 y 2013, y 95 g/km a partir de 2014.</p>
+a <span class="nobreak">2,00 €</span> por gramo por encima de un umbral libre que depende del año: <span class="nobreak">120 g/km</span> hasta 2011,
+<span class="nobreak">110 g/km</span> en 2012 y 2013, y <span class="nobreak">95 g/km</span> a partir de 2014.</p>
 
-<p><strong>Hasta el 30.06.2009</strong> no interviene el CO2. Se paga por cada 100 cm³ empezados según la norma
+<p><strong>Hasta el 30.06.2009</strong> no interviene el CO2. Se paga por cada <span class="nobreak">100 cm³</span> empezados según la norma
 Euro que corresponda a la clave de emisiones:</p>
 
 <table class="pure-table">
@@ -640,16 +640,16 @@ Euro que corresponda a la clave de emisiones:</p>
 </tr>
 </thead>
 <tbody>
-<tr><td>Euro 3 o mejor</td><td>6,75 €</td><td>15,44 €</td></tr>
-<tr><td>Euro 2</td><td>7,36 €</td><td>16,05 €</td></tr>
-<tr><td>Euro 1</td><td>15,13 €</td><td>27,35 €</td></tr>
-<tr><td>Euro 0 con permiso en alerta de ozono</td><td>21,07 €</td><td>33,29 €</td></tr>
-<tr><td>Euro 0, las demás</td><td>25,36 €</td><td>37,58 €</td></tr>
+<tr><td>Euro 3 o mejor</td><td><span class="nobreak">6,75 €</span></td><td><span class="nobreak">15,44 €</span></td></tr>
+<tr><td>Euro 2</td><td><span class="nobreak">7,36 €</span></td><td><span class="nobreak">16,05 €</span></td></tr>
+<tr><td>Euro 1</td><td><span class="nobreak">15,13 €</span></td><td><span class="nobreak">27,35 €</span></td></tr>
+<tr><td>Euro 0 con permiso en alerta de ozono</td><td><span class="nobreak">21,07 €</span></td><td><span class="nobreak">33,29 €</span></td></tr>
+<tr><td>Euro 0, las demás</td><td><span class="nobreak">25,36 €</span></td><td><span class="nobreak">37,58 €</span></td></tr>
 </tbody>
 </table>
 
-<p>Con estas tarifas, un diésel de 1.900 cm³ con norma Euro 2 paga 19 tramos a 16,05 €, es decir
-304,95 € al año. En coches antiguos el impuesto puede pesar más que en uno nuevo del mismo
+<p>Con estas tarifas, un diésel de <span class="nobreak">1.900 cm³</span> con norma Euro 2 paga 19 tramos a <span class="nobreak">16,05 €</span>, es decir
+<span class="nobreak">304,95 €</span> al año. En coches antiguos el impuesto puede pesar más que en uno nuevo del mismo
 tamaño.</p>
 
 <h2 id="lo-que-la-calculadora-no-cubre">Lo que la calculadora no cubre</h2>
@@ -678,7 +678,7 @@ matriculación en el país de origen. Mientras el coche circule con matrícula e
 esté de paso, está exento hasta un año, siempre que no se use para transporte remunerado.</p>
 
 <p>Hay <strong>exención total</strong> para los titulares con discapacidad grave cuya credencial lleve las
-siglas H, Bl o aG, y una reducción del 50 % con el distintivo naranja, en este caso a cambio de
+siglas H, Bl o aG, y una reducción del <span class="nobreak">50 %</span> con el distintivo naranja, en este caso a cambio de
 renunciar al transporte público gratuito. Ambas se solicitan a la aduana y valen para un solo
 vehículo.</p>
 
@@ -688,9 +688,9 @@ vehículo.</p>
 
 <div class="c-FAQ-item" id="como-se-calcula-el-impuesto-del-coche">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput6104431" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput7669951" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput6104431">
+            <label class="c-FAQ-label" for="faqInput7669951">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -698,15 +698,15 @@ vehículo.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>Decide la fecha de la primera matriculación. Desde el 01.01.2021 se pagan 2,00 € por cada 100 cm³ empezados en gasolina y 9,50 € en diésel, más una escala de seis tramos de 2,00 a 4,00 € por cada gramo de CO2 que pase de 95 g/km. Entre el 01.07.2009 y el 31.12.2020 rige la misma parte de cilindrada con 2,00 € por gramo por encima de un umbral fijo. Los coches anteriores tributan por cilindrada y clase de emisiones, entre 6,75 y 37,58 € por cada 100 cm³.</p>
+            <div class="c-FAQ-answer"><p>Decide la fecha de la primera matriculación. Desde el 01.01.2021 se pagan <span class="nobreak">2,00 €</span> por cada <span class="nobreak">100 cm³</span> empezados en gasolina y <span class="nobreak">9,50 €</span> en diésel, más una escala de seis tramos de 2,00 a <span class="nobreak">4,00 €</span> por cada gramo de CO2 que pase de <span class="nobreak">95 g/km</span>. Entre el 01.07.2009 y el 31.12.2020 rige la misma parte de cilindrada con <span class="nobreak">2,00 €</span> por gramo por encima de un umbral fijo. Los coches anteriores tributan por cilindrada y clase de emisiones, entre 6,75 y <span class="nobreak">37,58 €</span> por cada <span class="nobreak">100 cm³</span>.</p>
 </div>
 
         </div>
 <div class="c-FAQ-item" id="por-que-el-diesel-paga-mas">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput9224432" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput2389962" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput9224432">
+            <label class="c-FAQ-label" for="faqInput2389962">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -714,15 +714,15 @@ vehículo.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>La parte de cilindrada es casi cinco veces mayor en el diésel: 9,50 € en lugar de 2,00 € por cada 100 cm³ empezados. El legislador compensa así el menor impuesto que grava el gasóleo en el surtidor. La parte de CO2 es idéntica para los dos tipos de motor. En un motor de dos litros la diferencia solo por la cilindrada ya es de 190 € frente a 40 €.</p>
+            <div class="c-FAQ-answer"><p>La parte de cilindrada es casi cinco veces mayor en el diésel: <span class="nobreak">9,50 €</span> en lugar de <span class="nobreak">2,00 €</span> por cada <span class="nobreak">100 cm³</span> empezados. El legislador compensa así el menor impuesto que grava el gasóleo en el surtidor. La parte de CO2 es idéntica para los dos tipos de motor. En un motor de dos litros la diferencia solo por la cilindrada ya es de <span class="nobreak">190 €</span> frente a <span class="nobreak">40 €</span>.</p>
 </div>
 
         </div>
 <div class="c-FAQ-item" id="donde-esta-el-valor-de-co2">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1864443" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput6039963" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput1864443">
+            <label class="c-FAQ-label" for="faqInput6039963">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -736,9 +736,9 @@ vehículo.</p>
         </div>
 <div class="c-FAQ-item" id="hsn-tsn">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput4224444" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput8529964" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput4224444">
+            <label class="c-FAQ-label" for="faqInput8529964">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -752,9 +752,9 @@ vehículo.</p>
         </div>
 <div class="c-FAQ-item" id="hibridos">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput6764445" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1039975" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput6764445">
+            <label class="c-FAQ-label" for="faqInput1039975">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -768,9 +768,9 @@ vehículo.</p>
         </div>
 <div class="c-FAQ-item" id="importe-minimo">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput9194446" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput3629976" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput9194446">
+            <label class="c-FAQ-label" for="faqInput3629976">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -778,11 +778,11 @@ vehículo.</p>
 
             </label>
 
-            <div class="c-FAQ-answer"><p>No. El § 9 KraftStG no prevé ninguna cuota de partida, así que la idea de un mínimo de cinco euros es un bulo que circula desde hace años. Lo que sí existe es el redondeo: el importe que se cobra se baja al euro entero (§ 11 apdo. 5 KraftStG), de modo que 96,60 € de impuesto anual se convierten en 96 € a pagar.</p>
+            <div class="c-FAQ-answer"><p>No. El § 9 KraftStG no prevé ninguna cuota de partida, así que la idea de un mínimo de cinco euros es un bulo que circula desde hace años. Lo que sí existe es el redondeo: el importe que se cobra se baja al euro entero (§ 11 apdo. 5 KraftStG), de modo que <span class="nobreak">96,60 €</span> de impuesto anual se convierten en <span class="nobreak">96 €</span> a pagar.</p>
 </div>
 
         </div>
-<script type="application/ld+json" hidden="">{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "¿Cómo se calcula el impuesto de un turismo?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Decide la fecha de la primera matriculación. Desde el 01.01.2021 se pagan 2,00 € por cada 100 cm³ empezados en gasolina y 9,50 € en diésel, más una escala de seis tramos de 2,00 a 4,00 € por cada gramo de CO2 que pase de 95 g/km. Entre el 01.07.2009 y el 31.12.2020 rige la misma parte de cilindrada con 2,00 € por gramo por encima de un umbral fijo. Los coches anteriores tributan por cilindrada y clase de emisiones, entre 6,75 y 37,58 € por cada 100 cm³.</p>\n" } }, { "@type": "Question", "name": "¿Por qué un diésel paga más impuesto que un gasolina?", "acceptedAnswer": { "@type": "Answer", "text": "<p>La parte de cilindrada es casi cinco veces mayor en el diésel: 9,50 € en lugar de 2,00 € por cada 100 cm³ empezados. El legislador compensa así el menor impuesto que grava el gasóleo en el surtidor. La parte de CO2 es idéntica para los dos tipos de motor. En un motor de dos litros la diferencia solo por la cilindrada ya es de 190 € frente a 40 €.</p>\n" } }, { "@type": "Question", "name": "¿Dónde encuentro el valor de CO2 de mi coche?", "acceptedAnswer": { "@type": "Answer", "text": "<p>En el campo V.7 del permiso de circulación (Zulassungsbescheinigung Teil I). Desde 2018 ese campo recoge el valor medido según el ciclo WLTP; en papeles más antiguos es el valor NEFZ. Para el impuesto cuenta siempre la cifra inscrita en el documento, no la del catálogo del fabricante ni un consumo medido por usted.</p>\n" } }, { "@type": "Question", "name": "¿Puedo calcular el impuesto con el HSN y el TSN?", "acceptedAnswer": { "@type": "Answer", "text": "<p>No directamente. La clave del fabricante (campo 2.1) y la clave del tipo (campo 2.2) identifican una serie de modelos, no el vehículo concreto. Las calculadoras que las piden solo las usan para consultar la cilindrada, el combustible y el valor de CO2. Esos tres datos están en los campos P.1, P.3 y V.7 del mismo documento y se encuentran antes.</p>\n" } }, { "@type": "Question", "name": "¿Y un híbrido o un híbrido enchufable?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Tributan como cualquier coche de combustión, por cilindrada y CO2. La exención del § 3d KraftStG solo alcanza a los vehículos propulsados exclusivamente por electricidad, con batería o con pila de combustible. Los híbridos enchufables y los vehículos con generador de apoyo quedan fuera, por mucho que circulen a diario en modo eléctrico.</p>\n" } }, { "@type": "Question", "name": "¿Existe un importe mínimo de impuesto?", "acceptedAnswer": { "@type": "Answer", "text": "<p>No. El § 9 KraftStG no prevé ninguna cuota de partida, así que la idea de un mínimo de cinco euros es un bulo que circula desde hace años. Lo que sí existe es el redondeo: el importe que se cobra se baja al euro entero (§ 11 apdo. 5 KraftStG), de modo que 96,60 € de impuesto anual se convierten en 96 € a pagar.</p>\n" } } ] }</script>
+<script type="application/ld+json" hidden="">{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "¿Cómo se calcula el impuesto de un turismo?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Decide la fecha de la primera matriculación. Desde el 01.01.2021 se pagan <span class=\"nobreak\">2,00 €</span> por cada <span class=\"nobreak\">100 cm³</span> empezados en gasolina y <span class=\"nobreak\">9,50 €</span> en diésel, más una escala de seis tramos de 2,00 a <span class=\"nobreak\">4,00 €</span> por cada gramo de CO2 que pase de <span class=\"nobreak\">95 g/km</span>. Entre el 01.07.2009 y el 31.12.2020 rige la misma parte de cilindrada con <span class=\"nobreak\">2,00 €</span> por gramo por encima de un umbral fijo. Los coches anteriores tributan por cilindrada y clase de emisiones, entre 6,75 y <span class=\"nobreak\">37,58 €</span> por cada <span class=\"nobreak\">100 cm³</span>.</p>\n" } }, { "@type": "Question", "name": "¿Por qué un diésel paga más impuesto que un gasolina?", "acceptedAnswer": { "@type": "Answer", "text": "<p>La parte de cilindrada es casi cinco veces mayor en el diésel: <span class=\"nobreak\">9,50 €</span> en lugar de <span class=\"nobreak\">2,00 €</span> por cada <span class=\"nobreak\">100 cm³</span> empezados. El legislador compensa así el menor impuesto que grava el gasóleo en el surtidor. La parte de CO2 es idéntica para los dos tipos de motor. En un motor de dos litros la diferencia solo por la cilindrada ya es de <span class=\"nobreak\">190 €</span> frente a <span class=\"nobreak\">40 €</span>.</p>\n" } }, { "@type": "Question", "name": "¿Dónde encuentro el valor de CO2 de mi coche?", "acceptedAnswer": { "@type": "Answer", "text": "<p>En el campo V.7 del permiso de circulación (Zulassungsbescheinigung Teil I). Desde 2018 ese campo recoge el valor medido según el ciclo WLTP; en papeles más antiguos es el valor NEFZ. Para el impuesto cuenta siempre la cifra inscrita en el documento, no la del catálogo del fabricante ni un consumo medido por usted.</p>\n" } }, { "@type": "Question", "name": "¿Puedo calcular el impuesto con el HSN y el TSN?", "acceptedAnswer": { "@type": "Answer", "text": "<p>No directamente. La clave del fabricante (campo 2.1) y la clave del tipo (campo 2.2) identifican una serie de modelos, no el vehículo concreto. Las calculadoras que las piden solo las usan para consultar la cilindrada, el combustible y el valor de CO2. Esos tres datos están en los campos P.1, P.3 y V.7 del mismo documento y se encuentran antes.</p>\n" } }, { "@type": "Question", "name": "¿Y un híbrido o un híbrido enchufable?", "acceptedAnswer": { "@type": "Answer", "text": "<p>Tributan como cualquier coche de combustión, por cilindrada y CO2. La exención del § 3d KraftStG solo alcanza a los vehículos propulsados exclusivamente por electricidad, con batería o con pila de combustible. Los híbridos enchufables y los vehículos con generador de apoyo quedan fuera, por mucho que circulen a diario en modo eléctrico.</p>\n" } }, { "@type": "Question", "name": "¿Existe un importe mínimo de impuesto?", "acceptedAnswer": { "@type": "Answer", "text": "<p>No. El § 9 KraftStG no prevé ninguna cuota de partida, así que la idea de un mínimo de cinco euros es un bulo que circula desde hace años. Lo que sí existe es el redondeo: el importe que se cobra se baja al euro entero (§ 11 apdo. 5 KraftStG), de modo que <span class=\"nobreak\">96,60 €</span> de impuesto anual se convierten en <span class=\"nobreak\">96 €</span> a pagar.</p>\n" } } ] }</script>
 </div>
 
 <div class="c-Callouts">
@@ -801,7 +801,7 @@ vehículo.</p>
 
     
         <div class="c-CalloutsCard-text c-Article">
-      <p>Actualizado el 11 de septiembre de 2026. Base legal: el § 9 de la <a href="https://www.gesetze-im-internet.de/kraftstg/" target="_blank" rel="noreferrer noopener nofollow">Ley del impuesto sobre vehículos de motor (KraftStG)</a> en la versión de su octava ley de modificación, en vigor desde el 01.01.2026, y la guía <a href="https://www.zoll.de/DE/Fachthemen/Steuern/Verkehrsteuern/Kraftfahrzeugsteuer/Grundsaetze_Besteuerung/Steuerhoehe/steuerhoehe_node.html" target="_blank" rel="noreferrer noopener nofollow">Steuerhöhe</a> de la aduana alemana. Los importes son cálculos propios según esas tarifas; lo vinculante es la liquidación de la aduana principal.</p>
+      <p>Actualizado el 11 de septiembre de 2026. Base legal: el § 9 de la <a href="https://www.gesetze-im-internet.de/kraftstg/" target="_blank" rel="noreferrer noopener">Ley del impuesto sobre vehículos de motor (KraftStG)</a> en la versión de su octava ley de modificación, en vigor desde el 01.01.2026, y la guía <a href="https://www.zoll.de/DE/Fachthemen/Steuern/Verkehrsteuern/Kraftfahrzeugsteuer/Grundsaetze_Besteuerung/Steuerhoehe/steuerhoehe_node.html" target="_blank" rel="noreferrer noopener">Steuerhöhe</a> de la aduana alemana. Los importes son cálculos propios según esas tarifas; lo vinculante es la liquidación de la aduana principal.</p>
     </div>
     
 
