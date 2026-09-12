@@ -129,6 +129,27 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
 
     
+
+    
+        <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Steuerrechner für Lkw",
+    "description": "Ermittelt die Steuer für Nutzfahrzeuge und Traktoren pro Jahr. Eingaben: zulässiges Gesamtgewicht und ab 3.500 kg zusätzlich die Schadstoffklasse.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "de",
+    "isAccessibleForFree": true,
+    "provider": {
+        "@type": "Organization",
+        "@id": "https://kfz-steuer.co/#organization",
+        "url": "https://kfz-steuer.co/"
+    }
+}
+</script>
+
+    
 </head>
 
 
@@ -623,7 +644,7 @@
 
 
 
-<p>Dieser Rechner ist für Nutzfahrzeuge <strong>über <span class='nobreak'>3.500 kg</span></strong> gedacht, bei denen neben dem Gewicht auch die Schadstoffklasse zählt. Für leichtere Lkw und Transporter gilt eine eigene Vorschrift; deren Beträge stehen in der ersten Tabelle darunter.<br><br></p>
+<p>Der Rechner deckt beide Gewichtsstaffeln ab: Bis <span class='nobreak'>3.500 kg</span> zählt allein das Gewicht, darüber kommt die Schadstoffklasse hinzu und der Betrag ist gedeckelt. Unter <span class='nobreak'>3.500 kg</span> bleibt die Auswahl der Klasse deshalb ohne Wirkung.<br><br></p>
 
 <p>Nutzfahrzeuge werden nach Gewicht besteuert, nicht nach Hubraum oder CO₂-Wert. Entscheidend ist
 die <strong>zulässige Gesamtmasse aus Feld F.2</strong> der Zulassungsbescheinigung Teil I, und an der Grenze
@@ -639,12 +660,12 @@ Schadstoff- und Geräuschklasse hinzu.</p>
 Leergewicht nehmen – beide weichen ab.</li>
   <li><strong>Schadstoffklasse.</strong> S 2 und besser, S 1, G 1 oder „übrige“. Festgestellt wird sie von der
 Zulassungsbehörde nach Anlage XIV zu § 48 StVZO; im Papier führen die letzten beiden Ziffern
-von Feld 14.1 darauf.</li>
+von Feld 14.1 darauf. Sie zählt erst über <span class="nobreak">3.500 kg</span>.</li>
 </ul>
 
-<p>Der Rechner bildet die Staffel für Fahrzeuge <strong>über <span class="nobreak">3.500 kg</span></strong> ab. Für leichtere Nutzfahrzeuge
-gilt eine eigene Vorschrift ohne Schadstoffklassen – die Beträge dafür stehen in der Tabelle im
-nächsten Abschnitt.</p>
+<p>Der Rechner bildet beide Staffeln ab: Bis <span class="nobreak">3.500 kg</span> rechnet er allein nach dem Gewicht, darüber
+nach Gewicht und Klasse. Unterhalb der Grenze ändert die Auswahl der Schadstoffklasse den Betrag
+deshalb nicht – das Gesetz kennt dort keine.</p>
 
 <h2 id="bis-3500-kg-nur-das-gewicht-zählt">Bis <span class="nobreak">3.500 kg</span>: nur das Gewicht zählt</h2>
 
@@ -768,9 +789,9 @@ Dreihundertfünfundsechzigstel der Jahressteuer.</p>
 
 <div class="c-FAQ-item" id="lkw-steuer-berechnung">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput9968221" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput7999351" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput9968221">
+            <label class="c-FAQ-label" for="faqInput7999351">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -784,9 +805,9 @@ Dreihundertfünfundsechzigstel der Jahressteuer.</p>
         </div>
 <div class="c-FAQ-item" id="lkw-steuer-bis-3-5-t">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput4058232" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1629362" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput4058232">
+            <label class="c-FAQ-label" for="faqInput1629362">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -800,9 +821,9 @@ Dreihundertfünfundsechzigstel der Jahressteuer.</p>
         </div>
 <div class="c-FAQ-item" id="lkw-steuer-40-tonner">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput8378233" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput5329363" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput8378233">
+            <label class="c-FAQ-label" for="faqInput5329363">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -816,9 +837,9 @@ Dreihundertfünfundsechzigstel der Jahressteuer.</p>
         </div>
 <div class="c-FAQ-item" id="pkw-als-lkw-zulassen">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1878244" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput8699364" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput1878244">
+            <label class="c-FAQ-label" for="faqInput8699364">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -832,9 +853,9 @@ Dreihundertfünfundsechzigstel der Jahressteuer.</p>
         </div>
 <div class="c-FAQ-item" id="traktor-steuer-berechnen">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput4648245" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1149375" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput4648245">
+            <label class="c-FAQ-label" for="faqInput1149375">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -848,9 +869,9 @@ Dreihundertfünfundsechzigstel der Jahressteuer.</p>
         </div>
 <div class="c-FAQ-item" id="traktor-steuerbefreiung-beantragen">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput7928246" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput4429376" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput7928246">
+            <label class="c-FAQ-label" for="faqInput4429376">
 
                 <div class="c-FAQ-icon"></div>
 
@@ -864,9 +885,9 @@ Dreihundertfünfundsechzigstel der Jahressteuer.</p>
         </div>
 <div class="c-FAQ-item" id="lkw-zulassung-steuer">
 
-            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput1388257" type="checkbox" />
+            <input class="c-FAQ-input h-VisuallyHidden" id="faqInput6829377" type="checkbox" />
 
-            <label class="c-FAQ-label" for="faqInput1388257">
+            <label class="c-FAQ-label" for="faqInput6829377">
 
                 <div class="c-FAQ-icon"></div>
 
